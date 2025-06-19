@@ -9,5 +9,18 @@ export { ClientsAPI } from './api/clients.js';
 export { ProgramsAPI } from './api/programs.js';
 export { BaseAPI } from './api/base.js';
 
+// Error exports
+export {
+  CarespaceError,
+  AuthenticationError,
+  AuthorizationError,
+  NotFoundError,
+  ValidationError,
+  RateLimitError,
+  ServerError,
+  NetworkError,
+  TimeoutError
+} from './errors.js';
+
 // Default export for convenience
-export default CarespaceAPI;
+export { CarespaceAPI as default } from './api.js';
